@@ -1,0 +1,35 @@
+var book = {
+    title: "The Giver",
+    stars: 4,
+    nices: 25
+};
+var book2 = {
+  title: "The Giver2",
+  stars: 5,
+  nices: 543
+};   
+var book3 = {
+title: "The Giver3",
+stars: 7,
+nices: 132
+};
+var hi = 0;
+// draw shelf
+fill(173, 117, 33);
+rect(0, 120, width, 10);
+
+// draw one book
+var draw2 = function(tit) {
+   fill(tit.nices);
+rect(hi, 20, 90, 100);
+fill(0, 0, 0);
+text(tit.title, hi + 10, 29, 70, 100);
+for (var i = 0; i < tit.stars; i++) {
+    image(getImage("cute/Star"), hi, 90 + i * 20, 20, 30); 
+}
+hi += 100;
+};
+
+draw2(book3);
+draw2(book2);
+draw2(book);
