@@ -1,0 +1,28 @@
+var xPos = 0;
+var yPos = 0;
+var xPos2 = 300;
+var yPos2 = 250;
+
+draw = function() {
+    background(29, 40, 115);
+    fill(255, 242, 0);
+    triangle(xPos, yPos, xPos + 20, yPos + 20, xPos + 30, yPos);
+    rect(xPos2, yPos2, 20, 20);
+    
+    xPos += 3;
+    yPos += 2;
+    xPos2 += -3;
+    yPos2 += -4;
+    
+    stroke(84, 84, 84);
+    fill(0, 0, 0);
+    rect(0,300,50,150);
+    rect(50,350,50,50);
+    rect(200,300,50,150);
+    rect(300,300,50,150);
+    rect(350,375,25,25);
+};
+
+
+
+
