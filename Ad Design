@@ -1,0 +1,15 @@
+var text1 = 150;
+
+fill(255, 0, 0);
+textSize(30);
+text("Things You can buy!", 10, 30);
+textSize(10);
+text("Waste your money on! I need it!", 10, 87);
+textSize(20);
+text("You need this to live!", text1,150);
+textSize(19);
+text("Drawing below", text1 - 50, 200);
+fill(0, 0, 0);
+ellipse(200,300,200,100);
+ellipse(100,300,20,20);
+ellipse(300,300,20,20);
